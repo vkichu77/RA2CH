@@ -19,7 +19,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Prepare Build
         uses: vkichu77/RA2CH@master
       - name: Build the latest Docker image
         run: docker build . --file Dockerfile --tag docker.synapse.org/syn21684783/vkmodel:v1
