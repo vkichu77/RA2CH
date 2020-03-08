@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: vkichu77/RA2CH@master
       - name: Build the latest Docker image
-        run: docker build --file Dockerfile --tag docker.synapse.org/syn21684783/vkmodel:v1 .
+        run: docker build --file /home/runner/work/RA2CH/Dockerfile --tag docker.synapse.org/syn21684783/vkmodel:v1 .
       - name: Docker login
         run: docker login -u vkichu -p asdfgbvc
       - name: Push the latest Docker image
