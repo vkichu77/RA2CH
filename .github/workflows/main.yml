@@ -23,6 +23,6 @@ jobs:
       - name: Docker login
         run: docker login docker.synapse.org -u vkichu -p asdfgbvc         
       - name: Build the latest Docker image
-        run: docker build -f /home/runner/work/RA2CH/Dockerfile --tag docker.synapse.org/syn21684783/vkmodel:v1 .
+        run: docker build --tag docker.synapse.org/syn21684783/vkmodel:v1 .
       - name: Push the latest Docker image
         run: docker push docker.synapse.org/syn21684783/vkmodel:v1
