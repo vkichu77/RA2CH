@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow
+FROM tensorflow/tensorflow:latest-devel-py3
 
 RUN pip3 install scipy
 
