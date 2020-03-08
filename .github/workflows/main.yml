@@ -19,7 +19,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/RA2CH@master
+      - uses: vkichu77/RA2CH@master
         with:
           image: docker.synapse.org/syn21684783/vkmodel
           tag: latest
