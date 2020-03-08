@@ -316,7 +316,7 @@ def createAutoencoderData(typeFeat, trnpath, trnfilename, tstpath, tstfilename, 
     
     start=datetime.now()    
     trnpatIDs, trnscores, trnscoresOA, _, _ = getDataFromCSV(trnpath, trnfilename, typeFeat)
-    print(len(trnpatIDs))
+    # print(len(trnpatIDs))
     X_train1 = getHOGForTrainData(trnpatIDs)
     # print(len(X_train1))
 
@@ -408,7 +408,7 @@ def doRegression(typeFeat, trnpath, trnfilename, tstpath, tstfilename, outputpat
         files = glob.glob(model_dir + "/*")
         for f in files:
             os.remove(f)
-        print('files deleted')
+        # print('files deleted')
 
     with open(outputpath + '{}-3.pckl'.format(outputfilename1), 'rb') as f:  # Python 3: open(..., 'wb')
         resizedTrnOut, resizedTstOut, trnpatIDs, trnscores, trnscoresOA, tstpatIDs, tstscores, tstscoresOA, width, height = pickle.load(f)
@@ -416,7 +416,7 @@ def doRegression(typeFeat, trnpath, trnfilename, tstpath, tstfilename, outputpat
     resizedTstOut = np.reshape(resizedTstOut,  (resizedTstOut.shape[0],  resizedTstOut.shape[1] * resizedTstOut.shape[2]))
       
     resizedTrnOut, resizedTstOut = standard_scale(resizedTrnOut, resizedTstOut)
-    print(resizedTrnOut.shape)
+    # print(resizedTrnOut.shape)
     # trnscores, tstscores = standard_scale(trnscores, tstscores)
     preprocessor = prep.StandardScaler().fit(trnscores) 
     trnscores = preprocessor.transform(trnscores) 
@@ -451,11 +451,11 @@ def doRegression(typeFeat, trnpath, trnfilename, tstpath, tstfilename, outputpat
     model=tf.estimator.DNNRegressor(hidden_units=[512, 31],feature_columns=efeats,  label_dimension=trnscores.shape[1], model_dir=model_dir, optimizer='Adam')
 
     tksz = int(resizedTrnOut.shape[0] * 0.91)
-    print(tksz)
+    # print(tksz)
     final_pred1 = np.zeros((tstscores.shape[0], tstscores.shape[1]))
     for ii in range(0,25):
         # delfiles(model_dir)
-        print(ii)
+        # print(ii)
         npermu = np.random.permutation(resizedTrnOut.shape[0])
         npermu = npermu[:tksz]
         resizedTrnOut1 = resizedTrnOut[npermu, :]
@@ -512,9 +512,9 @@ trnpath = '/train/'
 trnfilename = 'training.csv'
 # trnpath = '/content/gdrive/My Drive/Dataset/train/'
 # trnfilename = 'training1.csv'
-# import os
-# if not os.path.exists(os.path.join(trnpath, trnfilename)):
-#     exit(0)
+import os
+if not os.path.exists(os.path.join(trnpath, trnfilename)):
+    exit(0)
     
 tstpath = '/test/'
 tstfilename = 'template.csv'
@@ -602,4 +602,5 @@ tmp = tmp.astype(int)
 for ii in range(0, final_pred1.shape[0]):        
     df.loc[ii, colOAnames] = tmp[ii,:]
 df.to_csv(outputpath + outputfilename, index=False)
+print('predictions.csv saved')
 

@@ -16,10 +16,6 @@ RUN mkdir -p /test/
 
 RUN mkdir -p /output/
 
-COPY train /train
-
-COPY test /test
-
 COPY main.py /usr/local/bin/
 
 COPY run.sh /run.sh  
