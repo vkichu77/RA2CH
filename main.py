@@ -453,7 +453,7 @@ def doRegression(typeFeat, trnpath, trnfilename, tstpath, tstfilename, outputpat
     tksz = int(resizedTrnOut.shape[0] * 0.91)
     # print(tksz)
     final_pred1 = np.zeros((tstscores.shape[0], tstscores.shape[1]))
-    for ii in range(0,10):
+    for ii in range(0,25):
         # delfiles(model_dir)
         # print(ii)
         npermu = np.random.permutation(resizedTrnOut.shape[0])
