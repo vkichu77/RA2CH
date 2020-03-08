@@ -512,9 +512,9 @@ trnpath = '/train/'
 trnfilename = 'training.csv'
 # trnpath = '/content/gdrive/My Drive/Dataset/train/'
 # trnfilename = 'training1.csv'
-import os
-if not os.path.exists(os.path.join(trnpath, trnfilename)):
-    exit(0)
+# import os
+# if not os.path.exists(os.path.join(trnpath, trnfilename)):
+#     exit(0)
     
 tstpath = '/test/'
 tstfilename = 'template.csv'
