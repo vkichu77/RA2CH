@@ -508,7 +508,7 @@ trnfilename = 'training.csv'
 # trnpath = '/content/gdrive/My Drive/Dataset/train/'
 # trnfilename = 'training1.csv'
 
-tstpath = '/train/'
+tstpath = '/test/'
 tstfilename = 'template.csv'
 # tstpath = '/content/gdrive/My Drive/Dataset/train/'
 # filename = 'template.csv'
