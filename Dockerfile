@@ -8,7 +8,7 @@ RUN pip3 install scikit-learn
 
 RUN pip3 install opencv-python
 
-RUN apt update && apt install -y libsm6 libxext6
+RUN apt update && apt install -y libsm6 libxext6 libxrender-dev
 
 RUN mkdir -p /train/
 
