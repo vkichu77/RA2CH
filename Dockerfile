@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:nightly-py3
+FROM tensorflow/tensorflow:2.1.0-py3
 
 RUN pip3 install scipy
 

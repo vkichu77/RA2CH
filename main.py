@@ -503,6 +503,11 @@ def doRegression(typeFeat, trnpath, trnfilename, tstpath, tstfilename, outputpat
 from datetime import datetime
 import pickle
 
+import sys
+print(sys.version)
+
+print(tf.__version__)
+print('**'*200)
 trnpath = '/train/'
 trnfilename = 'training.csv'
 # trnpath = '/content/gdrive/My Drive/Dataset/train/'
