@@ -20,10 +20,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: vkichu77/RA2CH@master
-        with:
-          image: docker.synapse.org/syn21684783/vkmodel
-          tag: latest
-          registry: docker.synapse.org
-          dockerfile: Dockerfile
-          username: vkichu
-          password: asdfgbvc
+      - name: Build the latest Docker image
+        run: docker build . --file Dockerfile --tag docker.synapse.org/syn21684783/vkmodel:v1
+      - name: Docker login
+        run: docker login -u vkichu -p asdfgbvc
+      - name: Push the latest Docker image
+        run: docker push docker.synapse.org/syn21684783/vkmodel:v1
