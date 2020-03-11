@@ -453,7 +453,8 @@ def doRegression(typeFeat, trnpath, trnfilename, tstpath, tstfilename, outputpat
     tksz = int(resizedTrnOut.shape[0] * 0.91)
     # print(tksz)
     final_pred1 = np.zeros((tstscores.shape[0], tstscores.shape[1]))
-    for ii in range(0,25):
+#     for ii in range(0,25):
+    for ii in range(0,2):    
         # delfiles(model_dir)
         # print(ii)
         npermu = np.random.permutation(resizedTrnOut.shape[0])
@@ -532,6 +533,8 @@ learning_rate = 0.001
 l2_reg = 0.0001
 num_epochs = 100
 batch_size = 4
+num_epochs = 5
+batch_size = 3
 windowsize_r, windowsize_c, divval = 128, 128, 16
 
 typeFeat='RH'
