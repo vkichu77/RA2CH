@@ -16,9 +16,9 @@ RUN mkdir -p /test/
 
 RUN mkdir -p /output/
 
-copy train /train/
+RUN copy train /train/
 
-copy test /test
+RUN copy test /test
 
 COPY main.py /usr/local/bin/
 
