@@ -22,5 +22,5 @@ jobs:
       - uses: vkichu77/RA2CH@master         
       - name: Docker login
         run: docker login docker.synapse.org -u vkichu -p asdfgbvc         
-      - name: Push the latest Docker image
-        run: docker push docker.synapse.org/syn21684783/vkmodel:v1
+#       - name: Push the latest Docker image
+#         run: docker push docker.synapse.org/syn21684783/vkmodel:v1
