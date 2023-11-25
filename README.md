@@ -10,7 +10,7 @@ Abstract:
 
 Introduction:
 The figure.1 below illustrates the implementation of the proposed model. 
-<img src="imgs/blockdiag">
+![Alt text](relative%20path/imgs/blockdiag.jpg?raw=true "Title")
 Various models are developed from different operations in the preprocessing and the regression phases respectively.
 
 Pre-processing Phase:
