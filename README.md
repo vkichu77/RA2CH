@@ -41,8 +41,10 @@ SC2: 0.7536
 SC3: 0.6523
 To conclude, the results shows that the accuracy of the deep learning models is very moderate when the whole scan images are used.
 
-<img src="https://github.com/vkichu77/RA2CH/blob/master/imgs/trnmodelNR-1e-09.png" width="100">
+<img src="https://github.com/vkichu77/RA2CH/blob/master/imgs/trnmodelNR-1e-09.png" width="300">
+
 ![Alt text](https://github.com/vkichu77/RA2CH/blob/master/imgs/trnmodelNR-1e-09.png "BlockDiagram")
+
 Fig(2) show the losses of autoencoders models with l2 regularization parameter 1e-09, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset. 
 
 Fig(3) show the losses of autoencoders models with l2 regularization parameter 1e-08, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset.
