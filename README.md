@@ -2,7 +2,9 @@
 Deep Learning Ensembles for The Measurement Of Joint Scores Of Rheumatoid Arthritis 
 
 Krishnakumar Vaithinathan<sup>1</sup>, Julian Benadit Pernabas<sup>2</sup>
+
 <sup>1</sup>Department of Computer Engineering, Karaikal Polytechnic College, Varichikudy, Karaikal-609609, India.
+
 <sup>2</sup>Department of Computer Science and Engineering, Faculty of Engineering, CHRIST(Deemed To be University), Kengeri Campus, Kanmanike,Bangalore,560074, Karnataka,India.
 
 Abstract:
