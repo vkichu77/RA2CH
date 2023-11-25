@@ -1,9 +1,9 @@
 # RA2CH
 Deep Learning Ensembles for The Measurement Of Joint Scores Of Rheumatoid Arthritis 
 
-Krishnakumar Vaithinathan1, Julian Benadit Pernabas2
-1Department of Computer Engineering, Karaikal Polytechnic College, Varichikudy, Karaikal-609609, India.
-2Department of Computer Science and Engineering, Faculty of Engineering, CHRIST(Deemed To be University), Kengeri Campus, Kanmanike,Bangalore,560074, Karnataka,India.
+Krishnakumar Vaithinathan<sup>1</sup>, Julian Benadit Pernabas<sup>2</sup>
+<sup>1</sup>Department of Computer Engineering, Karaikal Polytechnic College, Varichikudy, Karaikal-609609, India.
+<sup>2</sup>Department of Computer Science and Engineering, Faculty of Engineering, CHRIST(Deemed To be University), Kengeri Campus, Kanmanike,Bangalore,560074, Karnataka,India.
 
 Abstract:
 	Our method uses a multi-tier of deep learning models for various processes like background removal, dimensionality reduction, bone approximation with threshholding, deep regressors to predict various Rheumatoid Arthritis(RA) scores.
@@ -41,22 +41,6 @@ SC2: 0.7536
 SC3: 0.6523
 To conclude, the results shows that the accuracy of the deep learning models is very moderate when the whole scan images are used.
 
-<img src="https://github.com/vkichu77/RA2CH/blob/master/imgs/trnmodelNR-1e-09.png" width="300">
-
-![Alt text](https://github.com/vkichu77/RA2CH/blob/master/imgs/trnmodelNR-1e-09.png "BlockDiagram")
-
-Fig(2) show the losses of autoencoders models with l2 regularization parameter 1e-09, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset. 
-
-Fig(3) show the losses of autoencoders models with l2 regularization parameter 1e-08, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset.
- 
-Fig(4) show the losses of autoencoders models with l2 regularization parameter 1e-07, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset.
- 
-Fig(5) show the losses of autoencoders models with l2 regularization parameter 1e-06, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset.
- 
-Fig(6) show the losses of autoencoders models with l2 regularization parameter 1e-05, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset.
- 
-Fig.7 show the losses of autoencoders models with l2 regularization of 1e-05, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset used for dimensionality reduction.
- 
 
 References:
 1.	Yasi Wang, Hongxun Yao, Sicheng Zhao, Auto-encoder based dimensionality reduction, Neurocomputing, 2016
