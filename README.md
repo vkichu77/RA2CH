@@ -1,5 +1,5 @@
 # RA2CH
-Deep Learning Ensembles for The Measurement Of Joint Scores Of Rheumatoid Arthritis 
+<h2>Deep Learning Ensembles for The Measurement Of Joint Scores Of Rheumatoid Arthritis </h2>
 
 Krishnakumar Vaithinathan<sup>1</sup>, Julian Benadit Pernabas<sup>2</sup>
 
@@ -25,8 +25,6 @@ Here, the information in scans are enhanced so that the data pattern are easily 
 3.	Calculate mean image from the outputs of above autoencoders.
 4.	Perform adaptive thresholding and Contrast Limited AHE (CLAHE) for all images to remove background.
 5.	These images are used as input for a dimensionality reduction autoencoder to resize the images as 32x32.
-Figs(2-6) show the losses of autoencoders models with l2 regularization parameters (1e-09, 1e-08, 1e-07, 1e-06, 1e-05), learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset. (submission ID 9705546)
-Fig.7 show the losses of autoencoders models with l2 regularization of 1e-05, learning rate of 0.001 and batch size of 184 applied to regions LH, LF, RH, RF respectively on training dataset used for dimensionality reduction. (submission ID 9705546)
 
 Regression Phase:
 1.	DNN regression technique is used.
