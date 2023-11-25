@@ -47,7 +47,6 @@ Please cite this article for this code:
 Sun D, Nguyen TM, Allaway RJ, Wang J, Chung V, Thomas VY, Mason M, Dimitrovsky I, Ericson L, Li H, Guan Y. A crowdsourcing approach to develop machine learning models to quantify radiographic joint damage in rheumatoid arthritis. JAMA network open. 2022 Aug 1;5(8):e2227423-.
 </b>
 
-
-
+<br/><br/><br/><br/>
 References:
 1.	Yasi Wang, Hongxun Yao, Sicheng Zhao, Auto-encoder based dimensionality reduction, Neurocomputing, 2016
