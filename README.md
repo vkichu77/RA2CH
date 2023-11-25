@@ -1,4 +1,4 @@
-# RA2CH
+# RA2CHALLENGE
 <h2>Deep Learning Ensembles for The Measurement Of Joint Scores Of Rheumatoid Arthritis </h2>
 
 Krishnakumar Vaithinathan<sup>1</sup>, Julian Benadit Pernabas<sup>2</sup>
@@ -41,6 +41,8 @@ SC2: 0.7536
 SC3: 0.6523
 To conclude, the results shows that the accuracy of the deep learning models is very moderate when the whole scan images are used.
 
+Please cite this article for this code:
+Sun D, Nguyen TM, Allaway RJ, Wang J, Chung V, Thomas VY, Mason M, Dimitrovsky I, Ericson L, Li H, Guan Y. A crowdsourcing approach to develop machine learning models to quantify radiographic joint damage in rheumatoid arthritis. JAMA network open. 2022 Aug 1;5(8):e2227423-.
 
 References:
 1.	Yasi Wang, Hongxun Yao, Sicheng Zhao, Auto-encoder based dimensionality reduction, Neurocomputing, 2016
