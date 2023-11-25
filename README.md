@@ -7,10 +7,9 @@ Krishnakumar Vaithinathan<sup>1</sup>, Julian Benadit Pernabas<sup>2</sup>
 
 <sup>2</sup>Department of Computer Science and Engineering, Faculty of Engineering, CHRIST(Deemed To be University), Kengeri Campus, Kanmanike,Bangalore,560074, Karnataka,India.
 
-Abstract:
-	Our method uses a multi-tier of deep learning models for various processes like background removal, dimensionality reduction, bone approximation with threshholding, deep regressors to predict various Rheumatoid Arthritis(RA) scores.
-
 Introduction:
+
+The proposed method uses a multi-tier of deep learning models for various processes like background removal, dimensionality reduction, bone approximation with thresholding, deep regressors to predict various Rheumatoid Arthritis(RA) scores. This method is created for participating in international competition RA2-DREAM Challenge conducted at University of Alabama at Birmingham (https://www.synapse.org/#!Synapse:syn20545111/wiki/594083) between November 4, 2019 to May 14, 2020. My ranking in three sub challenge are 11, 13 and 11. Team name: vkichuDL. The results can be checked at https://www.synapse.org/#!Synapse:syn20545111/wiki/597246. Implemented in Python/Tensorflow. 
 
 The figure.1 below illustrates the implementation of the proposed model. 
 
