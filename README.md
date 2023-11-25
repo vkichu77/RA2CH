@@ -42,6 +42,7 @@ SC3: 0.6523
 To conclude, the results shows that the accuracy of the deep learning models is very moderate when the whole scan images are used.
 
 Please cite this article for this code:
+
 <b>
 Sun D, Nguyen TM, Allaway RJ, Wang J, Chung V, Thomas VY, Mason M, Dimitrovsky I, Ericson L, Li H, Guan Y. A crowdsourcing approach to develop machine learning models to quantify radiographic joint damage in rheumatoid arthritis. JAMA network open. 2022 Aug 1;5(8):e2227423-.
 </b>
