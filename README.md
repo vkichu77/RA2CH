@@ -8,10 +8,13 @@ Krishnakumar Vaithinathan1, Julian Benadit Pernabas2
 Abstract:
 	Our method uses a multi-tier of deep learning models for various processes like background removal, dimensionality reduction, bone approximation with threshholding, deep regressors to predict various Rheumatoid Arthritis(RA) scores.
 
+Introduction:
+The figure.1 below illustrates the implementation of the proposed model. 
+<img src="imgs/blockdiag">
+Various models are developed from different operations in the preprocessing and the regression phases respectively.
 
-	Various models are developed from different operations in the preprocessing and the regression phases respectively.
 Pre-processing Phase:
-	Here, the information in scans are enhanced so that the data pattern are easily captured by the regressors. The steps below are performed for LF, RF, LH and RH region groups respectively.
+Here, the information in scans are enhanced so that the data pattern are easily captured by the regressors. The steps below are performed for LF, RF, LH and RH region groups respectively.
 1.	Resize scans to dimension 128 x 128.
 2.	Create multiple autoencoders[1] with five different l2 regularization parameters (1e-09, 1e-08, 1e-07, 1e-06, 1e-05).
 3.	Calculate mean image from the outputs of above autoencoders.
